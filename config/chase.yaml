@@ -1,0 +1,11 @@
+chase:
+  ros__parameters:
+    chase.attack_radius: 3.0
+    chase.num_sectors: 12
+    chase.cost_threshold: 50 #这是成本地图上可行点的成本阈值，超过这个值的点将被视为不可行
+    chase.costmap_topic: "global_costmap/costmap"
+    chase.robot_base_frame: "chassis"
+    chase.transform_tolerance: 0.5 #秒
+    chase.max_visualization_distance: 6.0 #这是可视化的最大距离
+    chase.marker_scale_base: 0.2 #这是可视化的marker的基础尺寸
+    chase.visualize: true #是否启用可视化
