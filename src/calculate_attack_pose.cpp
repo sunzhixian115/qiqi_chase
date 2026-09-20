@@ -81,7 +81,7 @@ void CalculateAttackPose::targetCallback(base_interfaces_demo::msg::Target::Shar
   //初始化tracker
   tracker_head = msg->header.header;//敌人的时间戳和坐标系
   tracker_dis=msg->distance;
-  std::cout<<"tracker_dis:"<<tracker_dis<<std::endl;
+  RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000, "tracker_dis: %f", tracker_dis);
   tracker_yaw=msg->yaw;
   tracking = (  tracker_dis > 0.0f &&tracker_dis<10.0f);
   //arget_received_ = true;
