@@ -2,6 +2,16 @@
 
 `chase` 是 RoboMaster 哨兵导航（`pb2025_sentry_nav`）中的一个 ROS 2 功能包，负责在**全局代价地图**上实时解算追击**敌方机器人（步兵 / 英雄）**时应前往的**攻击位置**（chase point），并将该点发布给上层决策使用。
 
+## 追击演示
+
+**实车追击**
+
+![RoboMaster 哨兵实车导航追击](docs/media/pursuit-2026-11-23.gif)
+
+**仿真追击与可视化**
+
+![Gazebo 仿真环境中的追击与 RViz 可视化](docs/media/pursuit-2026-11-26.gif)
+
 ## 在整套系统中的位置
 
 ```
